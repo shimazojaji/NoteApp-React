@@ -1,4 +1,4 @@
-#Note App
+# Note App
 ## Introduction
 
 The React features used in this mini app include: 
@@ -7,11 +7,13 @@ The React features used in this mini app include:
 - nested components
 - context
 - reducer
+- useState
   
 The JavaScript features and methods used in this mini app include:
-- map
+- sort
 - object
 - ternary operator
+- events
 
 ## Technologies applied 
 
