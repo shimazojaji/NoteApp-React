@@ -1,7 +1,9 @@
 import { useNotes } from "../context/NoteContext";
 import { useNoteDispatch } from "../context/NoteContext";
+import Bin from "./Bin";
+import CheckBox from "./CheckBox";
 
-function NoteList({ sortBy }) {
+export function NoteList({ sortBy }) {
   const notes = useNotes();
   let sortedNotes = notes;
   if (sortBy === "earliest")
@@ -39,18 +41,14 @@ function NoteItem({ note }) {
   return (
     <div className="note__items ">
       <div className={`note__item ${note.completed ? "completed" : " "}`}>
-        <div>
+        <div className="note__container">
           <p className="note__title">{note.title}</p>
           <p className="note__desc">{note.description}</p>
         </div>
-        <div className="note__actions">
-          <button
-            onClick={() => dispatch({ type: "delete", payload: note.id })}
-          >
-            ❌
-          </button>
-          <input
-            type="checkbox"
+        <div className="note__actions ">
+          <Bin onClick={() => dispatch({ type: "delete", payload: note.id })} />
+          <CheckBox
+            type={"checkbox"}
             name={note.id}
             id={note.id}
             value={note.id}
@@ -60,6 +58,19 @@ function NoteItem({ note }) {
             }}
             checked={note.completed}
           />
+
+          {/*  <input
+            type="checkbox"
+            name={note.id}
+            id={note.id}
+            value={note.id}
+            onChange={(e) => {
+              const noteId = Number(e.target.value);
+              dispatch({ type: "complete", payload: noteId });
+            }}
+            checked={note.completed}
+      
+          /> */}
         </div>
       </div>
       <div className="note__date">

@@ -10,7 +10,8 @@ function NoteStatus() {
   if (!allNotes)
     return (
       <Message>
-        <h2>✅ No Notes has already been add.🤨</h2>
+        <span className="note__message"> No Notes has already been add.</span>
+        <div className="custom-line"></div>
       </Message>
     );
   return (
