@@ -9,11 +9,11 @@ The React features used in this mini app include:
 - reducer
 - useState
   
-The JavaScript features and methods used in this mini app include:
-- sort
-- object
-- ternary operator
-- events
+The JavaScript features and methods used in this project include:
+
+- Array methods: filter, sort.
+- Event handling: Listening to and handling user interactions like clicks and input changes.
+- Date methods: Date.now(), Date().toISOString().
 
 ## Technologies applied 
 
@@ -33,29 +33,11 @@ The JavaScript features and methods used in this mini app include:
 - npm run dev
 
 ## Details
-The project includes a main folder named src, which contains components and all the core files of the project.
-The structure of the src folder is as follows:
-The custom components of the project are as follows:
- - CourseCard
- - CourseList
- - Footer
- - Header
- - StartIcon
-   
-The styling files include:
-- index.css
-- App.css
+The project is developed with the following functionalities:
 
-  
-The main components include:
-- main.jsx
-- App.jsx
+- Add a new note
+- Delete notes
+- Mark a note as "To-Do"
+- Filter notes based on latest, earliest, and completed
+- Does not save notes in local storage
 
-
-The `Header` component is used to display a static text.  
-
-The `CourseList` component is responsible for displaying a list of courses defined as objects in the `courses` array.  
-
-The `CourseCard` component is rendered for each course in the `courses` array. It utilizes `props` to customize the structure and content of each course.  
-
-The `Footer` component is used to display a static text as well.
