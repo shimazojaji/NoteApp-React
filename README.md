@@ -15,6 +15,14 @@ The JavaScript features and methods used in this project include:
 - Event handling: Listening to and handling user interactions like clicks and input changes.
 - Date methods: Date.now(), Date().toISOString().
 
+
+The HTML and CSS features used in the app include:
+
+- Responsive design: Ensuring compatibility across devices.
+- Flexbox and Grid layouts: For creating flexible and organized layouts.
+- CSS variables: For reusable and maintainable styling.
+- BEM naming convention: For a consistent and scalable class naming system.
+
 ## Technologies applied 
 
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
